@@ -23,7 +23,7 @@ class Tree
      * @param ActiveRecord $dataClass 类
      * @return array
      */
-    static function data(ActiveRecord $dataClass)
+    static function data($dataClass)
     {
         $address = $dataClass::find()->asArray()->all();
         foreach ($address as $key) {
@@ -45,7 +45,7 @@ class Tree
             if(isset($items[$item['pid']])){
                 $items[$item['pid']]['items'][]=&$items[$item['id']];
             }else{
-                $item[]=&$items[$item['id']];
+                $tree[]=&$items[$item['id']];
             }
         }
         return $tree;

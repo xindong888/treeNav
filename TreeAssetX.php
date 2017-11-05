@@ -9,7 +9,12 @@
 namespace treeNav;
 
 
-class TreeAssetX
-{
+use yii\web\AssetBundle;
 
+class TreeAssetX extends AssetBundle
+{
+    public $sourcePath='@vendor/xindong888/treeNav';
+    public $css=[
+      'treeNavStyle.css'
+    ];
 }
