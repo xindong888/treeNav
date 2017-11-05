@@ -13,7 +13,7 @@ use yii\web\AssetBundle;
 
 class TreeAssetX extends AssetBundle
 {
-    public $sourcePath='@vendor/xindong888/treeNav';
+    public $sourcePath=__DIR__;
     public $css=[
       'treeNavStyle.css'
     ];
